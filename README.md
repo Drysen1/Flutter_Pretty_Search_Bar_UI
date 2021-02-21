@@ -1,10 +1,10 @@
 # flutter_pretty_search_bar_ui
 
-A new Flutter project.
+A pretty search bar implemented in Flutter with a little animation when a user presses the "GO"/"Search" button.
+
+![alt text](https://github.com/Drysen1/flutter_pretty_search_bar_UI/blob/main/screenshots/Simulator%20Screen%20Shot%20-%20iPhone%2012%20Pro%20Max%20-%202021-02-21%20at%2014.47.05.png)
 
 ## Getting Started
-
-This project is a starting point for a Flutter application.
 
 A few resources to get you started if this is your first Flutter project:
 
