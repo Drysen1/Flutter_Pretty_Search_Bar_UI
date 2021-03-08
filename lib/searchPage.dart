@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/foundation.dart' show kIsWeb;
 
 class SearchPage extends StatefulWidget {
   @override
@@ -34,6 +35,7 @@ class _SearchPageState extends State<SearchPage> {
       body: Container(
         padding: EdgeInsets.all(16),
         height: double.infinity,
+        width: double.infinity,
         color: Colors.white,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
@@ -48,6 +50,7 @@ class _SearchPageState extends State<SearchPage> {
 
   Widget _searchBox(){
     return Container(
+      width: kIsWeb ? 450 : double.infinity,
       padding: EdgeInsets.fromLTRB(8, 2, 8, 2),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.all(Radius.circular(80)),
