@@ -120,11 +120,13 @@ class _SearchPageState extends State<SearchPage> {
       height: 36,
       duration: Duration(milliseconds: 500),
       curve: Curves.fastOutSlowIn,
-      child: RaisedButton(
-        padding: EdgeInsets.fromLTRB(4, 10, 4, 10),
-        color: Colors.white,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(40)
+      child: ElevatedButton(
+        style: ElevatedButton.styleFrom(
+          padding: EdgeInsets.fromLTRB(4, 10, 4, 10),
+          primary: Colors.white,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(40)
+          )
         ),
         child: this._btnText == "" ? _loadingBox() : _btnTextWidget(),
         onPressed: () async { 
